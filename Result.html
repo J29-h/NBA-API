@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Display Example</title>
+</head>
+<body>
+  <h1>PLAYERS</h1>
+  <div id="players"></div>
+
+  <script>
+    const url = 'https://www.balldontlie.io/api/v1/players';
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const playersContainer = document.getElementById('players');
+
+        // Iterate over the player data and create HTML elements for each player
+        data.data.forEach(player => {
+          const playerElement = document.createElement('div');
+          playerElement.innerHTML = `
+            <h3>${player.first_name} ${player.last_name}</h3>
+            <p>Team: ${player.team.full_name}</p>
+            <p>Position: ${player.position}</p>
+            <hr>
+          `;
+          playersContainer.appendChild(playerElement);
+        });
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+
+</head>
+
+<body>
+    <h1>PLAYERS:</h1>
+</body>
+<script>
+    const url = 'https://www.balldontlie.io/api/v1/players';
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // Use the data returned from the API
+        })
+        .catch(error => {
+            console.error(error);
+        });    fetch('https://www.balldontlie.io/api/v1/players', {
+        method: 'POST',
+        headers: {
+            'Accept': "application/jason"
+        },
+        body: JSON.stringify({
+            first_name: 'player 1'
+        })
+    }).then(
+        res => {
+            return res.json();
+        })
+        .then(Object => {
+            object.foreach(players => {
+                const mappedArray = <li>${players.first_name} {players.last_name} {players.weight_pounds}</li>;
+                document.querySelector('ul').insertAdjacentHTML('beforeend', mappedArray)
+            });
+        })
+        .catch(error => console.log(error))
+</script>
+
+</html> -->

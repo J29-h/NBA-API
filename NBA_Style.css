@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Permanent+Marker&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overscroll-behavior: none;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: inherit;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #1e1002;
+}
+
+section {
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.txt-Black {
+    color: #202020;
+}
+
+.txt-Light-Black {
+    color: #333533;
+}
+
+.txt-Yellow {
+    color: #ffc300;
+}
+
+.txt-light-Yellow {
+    color: #FFD100;
+}
+
+.txt-White {
+    color: #fff;
+}
+
+.bg-Black {
+    background-color: #202020;
+}
+
+.bg-Light-Black {
+    background-color: #1e1002;
+}
+
+.bg-Yellow {
+    background-color: #ffc300;
+}
+
+.bg-Light-Yellow {
+    background-color: #FFD100;
+}
+
+.bg-White {
+    background-color: linear-gradient(245.59deg, #333533 0%, #dee2e6 28.53%, #e9ecef 75.52%, #f8f9fa, #fff);
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+/* Section Header CSS Start */
+header {
+    height: 74px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+}
+
+.logo {
+    color: #ffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border-bottom: 2px solid transparent;
+    z-index: 10000;
+}
+
+a.nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
+}
+
+a.nav img {
+    height: 80px !important;
+}
+
+#First {
+    color: transparent;
+}
+
+#Second {
+    transition: all 0.5s ease;
+    color: transparent;
+
+}
+
+a.nav:hover #First {
+    display: flex;
+    color: #fff;
+}
+
+a.nav:hover #Second {
+    display: flex;
+    color: #ffc300;
+    border-bottom: 4px solid #ffc300;
+    letter-spacing: 3px;
+}
+
+.nav h1 {
+    width: fit-content;
+    height: 85px;
+}
+
+.dashboard-header .container {
+    height: 100%;
+    z-index: 10000;
+}
+
+.dashboard-header .logo-row {
+    padding: 0px 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    height: 74px;
+}
+
+.logo-row {
+    padding: 0 16px;
+}
+
+.dashboard-header .logo {
+    height: 40px;
+    margin: 0;
+    z-index: 9;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.logo a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dashboard-header .logo img {
+    height: 40px;
+    width: auto;
+    margin: 45px 1px;
+    display: block;
+}
+
+.dashboard-header .menu-nav {
+    position: relative;
+    top: 100px;
+    height: 74px;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.dashboard-header .menu-nav li {
+    height: 48px;
+    line-height: 48px;
+    padding: 0 8px;
+    min-width: 90px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding-left: 51px;
+    margin-right: auto;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, transparent, #202020);
+    z-index: 1;
+}
+
+/* Section Header CSS End */
+
+/* Section contents CSS Start */
+#section-contents {
+    max-width: -webkit-fill-available;
+    margin: 5px auto;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background: #041525;
+}
+
+.carousel img {
+    display: block;
+    height: 100%;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+.flickity-button {
+    display: none;
+}
+
+/* Section contents CSS End */
+
+/* Section Players CSS Start */
+#section-Players {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Home_Media/vecteezy_basketball-background-illustration-ai-generative_22337612.png);
+}
+
+.section-wrapper {
+    max-width: -webkit-fill-available;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    padding: 60px;
+}
+
+.card {
+    width: 100%;
+    max-width: 991px;
+    height: 500px;
+    border-radius: 4px;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card h3 {
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#one:hover {
+    flex: 7;
+    width: 100%;
+    background-image: url(https://static01.nyt.com/images/2022/07/31/multimedia/31russell-1/31russell-1-superJumbo.jpg?quality=75&auto=webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#two:hover {
+    flex: 7;
+    width: 100%;
+    background-image: url(https://static01.nyt.com/images/2023/02/02/sports/00nba-lebron-streeter/00nba-lebron-streeter-articleLarge.jpg?quality=75&auto=webp&disable=upscale);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#three:hover {
+    flex: 7;
+    width: 100%;
+    background-image: url(https://cdn.nba.com/teams/uploads/sites/1610612741/2022/12/221213_MichaelJordan_Solo_RedJersey_16x9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#four:hover {
+    flex: 7;
+    width: 100%;
+    background-image: url(https://www.basketballnetwork.net/.image/t_share/MTk3OTY2ODM0MjM2OTkwODQ0/shaquille-oneal-young.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#five:hover {
+    flex: 7;
+    width: 100%;
+    background-image: url(https://cdn.cnn.com/cnnnext/dam/assets/200126143156-02-kobe-bryant-lead-image-super-tease.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#six:hover {
+    flex: 7;
+    width: 100%;
+    background-image: url(https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2023/05/896/500/LeBron-James3.jpg?ve=1&tl=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card h3 span {
+    min-width: 14em;
+    padding: .5em;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    letter-spacing: .1em;
+}
+
+#one:hover span {
+    transform: rotate(0);
+    transition: .9s;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 590px;
+    background-color: #0000009e;
+}
+
+#two:hover span {
+    transform: rotate(0);
+    transition: .9s;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 590px;
+    background-color: #0000009e;
+}
+
+#three:hover span {
+    transform: rotate(0);
+    transition: .9s;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 590px;
+    background-color: #0000009e;
+}
+
+#four:hover span {
+    transform: rotate(0);
+    transition: .9s;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 590px;
+    background-color: #0000009e;
+}
+
+#five:hover span {
+    transform: rotate(0);
+    transition: .9s;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 590px;
+    background-color: #0000009e;
+}
+
+#six:hover span {
+    transform: rotate(0);
+    transition: .9s;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 590px;
+    background-color: #0000009e;
+}
+
+.pg {
+    display: none;
+}
+
+.card h3:hover .pg {
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+}
+
+/* Section Players CSS End */
+
+/* Section Teams CSS Start */
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+h1.Teams-names {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+}
+
+.square {
+    position: relative;
+    width: 295px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.square:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.square:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 88%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.square:hover .details {
+    bottom: 0;
+}
+
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.details .Team-colors {
+    display: flex;
+    gap: .375em;
+    margin-bottom: .875em;
+    font-size: .85em;
+}
+
+.details .Team-colors span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+}
+
+.details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.details .cast h3 {
+    margin-bottom: .5em;
+}
+
+.details .cast ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.details .cast ul li {
+    list-style: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid #fff;
+}
+
+.details .cast ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Section Teams CSS End */
+
+/* Section Api CSS Start */
+
+#section-api {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Home_Media/Picture1.png);
+}
+
+.section-seasons {
+    max-width: -webkit-fill-available;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    padding: 60px;
+}
+
+form {
+    width: 160px;
+    height: 65px;
+    display: flex;
+    padding: 25px 20px;
+    margin: auto;
+    border-radius: 70px;
+}
+
+
+.btn-input {
+    color: #ffc300;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 60px;
+    background: transparent;
+    border: #ffc300 solid 2px;
+    transition: 0.6s ease;
+}
+
+.btn-input:hover {
+    border: #38220b solid 2px;
+    background: #38220b;
+    color: #fff;
+}
+
+
+/* Section Api CSS End */
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* -------- Landing page ------- */
+    .Player-section {
+        padding: 50px 30px;
+    }
+
+    .Player-section .item {
+        margin: 0 12px 60px;
+        width: 260px;
+        height: 360px;
+    }
+
+    .Player-section .item.active {
+        width: 400px;
+    }
+
+    .Player-section .item-desc {
+        transform: translateY(calc(100% - 46px));
+        -webkit-transform: translateY(calc(100% - 46px));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .line-title {
+        width: 330px;
+    }
+
+    /* -------- Landing page ------- */
+    .Player-section {
+        padding: 50px 30px 40px;
+    }
+
+    .Player-section .item {
+        margin: 0 12px 60px;
+        width: 240px;
+        height: 330px;
+    }
+
+    .Player-section .item.active {
+        width: 360px;
+    }
+
+    .Player-section .item-desc {
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .line-title {
+        width: 250px;
+    }
+
+    /* -------- Landing page ------- */
+    .Player-section {
+        padding: 30px 15px 20px;
+    }
+
+    .Player-section .item {
+        margin: 0 10px 40px;
+        width: 200px;
+        height: 280px;
+    }
+
+    .Player-section .item.active {
+        width: 270px;
+        box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .Player-section .item-desc {
+        padding: 0 14px 5px;
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+}
+
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+/* Responcive Screen */
+
+/* @media screen and (max-width: 768px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        padding: 30px 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        padding: 5px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -25px;
+        z-index: 10000;
+    }
+
+    .carousel img {
+        height: 338px;
+    }
+} */
